@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name ProjectComponents)(type KiCad)(uri ${KIPRJMOD}/component_library)(options "")(descr ""))
   (lib (name ESP8266)(type KiCad)(uri ${KIPRJMOD}/../kicad-ESP8266/ESP8266.pretty)(options "")(descr ""))
+  (lib (name component_library)(type KiCad)(uri ${KIPRJMOD}/component_library.pretty)(options "")(descr ""))
 )
