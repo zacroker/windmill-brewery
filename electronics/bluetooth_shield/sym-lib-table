@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name LAIRD_BLE)(type Legacy)(uri ${KIPRJMOD}/component_library/453-00005.lib)(options "")(descr ""))
+)

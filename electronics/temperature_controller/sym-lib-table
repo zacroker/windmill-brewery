@@ -1,10 +1,8 @@
 (sym_lib_table
   (lib (name QuickConnectTab)(type Legacy)(uri ${KIPRJMOD}/component_library/1217861-1.lib)(options "")(descr ""))
-  (lib (name ACDCConvertor)(type Legacy)(uri ${KIPRJMOD}/component_library/LS10-13B12R3.lib)(options "")(descr ""))
   (lib (name ESP8266)(type Legacy)(uri ${KIPRJMOD}/../kicad-ESP8266/ESP8266.lib)(options "")(descr ""))
   (lib (name P-MOSFET)(type Legacy)(uri ${KIPRJMOD}/component_library/IRF9Z34NPBF.lib)(options "")(descr ""))
   (lib (name 5V_Regulator)(type Legacy)(uri ${KIPRJMOD}/component_library/MC7805CT-BPMS-ND.lib)(options "")(descr ""))
   (lib (name StereoJack)(type Legacy)(uri ${KIPRJMOD}/component_library/SJ1-3523N.lib)(options "")(descr ""))
-  (lib (name TerminalBlock)(type Legacy)(uri ${KIPRJMOD}/component_library/TB006-508-02BE.lib)(options "")(descr ""))
   (lib (name BOBShifter)(type Legacy)(uri ${KIPRJMOD}/component_library/BOB-12009.lib)(options "")(descr ""))
 )

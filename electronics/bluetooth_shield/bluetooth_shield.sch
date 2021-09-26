@@ -1,0 +1,354 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LAIRD_BLE:453-00005 IC1
+U 1 1 6150806D
+P 7500 1150
+F 0 "IC1" H 8700 1415 50  0000 C CNN
+F 1 "453-00005" H 8700 1324 50  0000 C CNN
+F 2 "45300005" H 9750 1250 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/453-00005.pdf" H 9750 1150 50  0001 L CNN
+F 4 "Bluetooth Modules (802.15.1) BL651 Series - Bluetooth v5 Module, Int. Antenna (Nordic nRF52810) Tape & Reel" H 9750 1050 50  0001 L CNN "Description"
+F 5 "2.2" H 9750 950 50  0001 L CNN "Height"
+F 6 "Laird Connectivity" H 9750 850 50  0001 L CNN "Manufacturer_Name"
+F 7 "453-00005" H 9750 750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "239-453-00005" H 9750 650 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Laird-Connectivity/453-00005?qs=qSfuJ%252Bfl%2Fd5%2Fxfc9ubfR9w%3D%3D" H 9750 550 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 9750 450 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 9750 350 50  0001 L CNN "Arrow Price/Stock"
+	1    7500 1150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J1
+U 1 1 615090EB
+P 2050 1950
+F 0 "J1" H 2100 2467 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 2100 2376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 2050 1950 50  0001 C CNN
+F 3 "~" H 2050 1950 50  0001 C CNN
+	1    2050 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 6150B75D
+P 1500 1500
+F 0 "#PWR0101" H 1500 1350 50  0001 C CNN
+F 1 "+5V" H 1515 1673 50  0000 C CNN
+F 2 "" H 1500 1500 50  0001 C CNN
+F 3 "" H 1500 1500 50  0001 C CNN
+	1    1500 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1500 1500 2050
+Wire Wire Line
+	1500 2050 1850 2050
+Wire Wire Line
+	1500 2050 1500 2350
+Wire Wire Line
+	1500 2350 1850 2350
+Connection ~ 1500 2050
+Wire Wire Line
+	1850 1650 1700 1650
+Wire Wire Line
+	1700 1650 1700 2150
+Wire Wire Line
+	1700 2150 1850 2150
+Wire Wire Line
+	1700 2150 1700 2550
+Wire Wire Line
+	1700 2550 2500 2550
+Wire Wire Line
+	2500 2550 2500 2350
+Wire Wire Line
+	2500 2350 2350 2350
+Connection ~ 1700 2150
+Wire Wire Line
+	2500 2350 2500 1750
+Wire Wire Line
+	2500 1750 2350 1750
+Connection ~ 2500 2350
+$Comp
+L power:GND #PWR0102
+U 1 1 6150CA44
+P 2500 2700
+F 0 "#PWR0102" H 2500 2450 50  0001 C CNN
+F 1 "GND" H 2505 2527 50  0000 C CNN
+F 2 "" H 2500 2700 50  0001 C CNN
+F 3 "" H 2500 2700 50  0001 C CNN
+	1    2500 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2700 2500 2550
+Connection ~ 2500 2550
+$Comp
+L power:+12V #PWR0103
+U 1 1 6150D168
+P 2700 1500
+F 0 "#PWR0103" H 2700 1350 50  0001 C CNN
+F 1 "+12V" H 2715 1673 50  0000 C CNN
+F 2 "" H 2700 1500 50  0001 C CNN
+F 3 "" H 2700 1500 50  0001 C CNN
+	1    2700 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1500 2700 1650
+Wire Wire Line
+	2700 1650 2350 1650
+Wire Wire Line
+	2700 1650 2700 2250
+Wire Wire Line
+	2700 2250 2350 2250
+Connection ~ 2700 1650
+Text GLabel 2850 1850 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	2850 1850 2350 1850
+Text GLabel 2850 1950 2    50   Input ~ 0
+CS
+Wire Wire Line
+	2850 1950 2350 1950
+Text GLabel 2850 2050 2    50   Input ~ 0
+MISO
+Wire Wire Line
+	2850 2050 2350 2050
+Text GLabel 2850 2150 2    50   Input ~ 0
+SCLK
+Wire Wire Line
+	2850 2150 2350 2150
+Text GLabel 1400 1850 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	1400 1850 1850 1850
+Text GLabel 1400 1950 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	1400 1950 1850 1950
+Text GLabel 1400 1750 0    50   Input ~ 0
+AUX_1
+Wire Wire Line
+	1400 1750 1850 1750
+Text GLabel 1400 2250 0    50   Input ~ 0
+AUX_2
+Wire Wire Line
+	1400 2250 1850 2250
+Text GLabel 7750 1350 2    50   Input ~ 0
+MOSI
+Text GLabel 7750 1250 2    50   Input ~ 0
+MISO
+Text GLabel 4950 2850 0    50   Input ~ 0
+SCLK
+Wire Wire Line
+	7750 1350 7500 1350
+Wire Wire Line
+	7750 1250 7500 1250
+Wire Wire Line
+	7500 1150 8200 1150
+Wire Wire Line
+	8200 1150 8200 1300
+$Comp
+L power:GND #PWR0104
+U 1 1 615111CD
+P 8200 1300
+F 0 "#PWR0104" H 8200 1050 50  0001 C CNN
+F 1 "GND" H 8205 1127 50  0000 C CNN
+F 2 "" H 8200 1300 50  0001 C CNN
+F 3 "" H 8200 1300 50  0001 C CNN
+	1    8200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2650 8200 2650
+Wire Wire Line
+	8200 2650 8200 2800
+$Comp
+L power:GND #PWR0105
+U 1 1 61511A8D
+P 8200 2800
+F 0 "#PWR0105" H 8200 2550 50  0001 C CNN
+F 1 "GND" H 8205 2627 50  0000 C CNN
+F 2 "" H 8200 2800 50  0001 C CNN
+F 3 "" H 8200 2800 50  0001 C CNN
+	1    8200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2950 4400 2950
+Wire Wire Line
+	4400 2950 4400 3100
+$Comp
+L power:GND #PWR0106
+U 1 1 61512CC8
+P 4400 3100
+F 0 "#PWR0106" H 4400 2850 50  0001 C CNN
+F 1 "GND" H 4405 2927 50  0000 C CNN
+F 2 "" H 4400 3100 50  0001 C CNN
+F 3 "" H 4400 3100 50  0001 C CNN
+	1    4400 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1750 4400 1750
+Wire Wire Line
+	4400 1750 4400 1900
+$Comp
+L power:GND #PWR0107
+U 1 1 6151352B
+P 4400 1900
+F 0 "#PWR0107" H 4400 1650 50  0001 C CNN
+F 1 "GND" H 4405 1727 50  0000 C CNN
+F 2 "" H 4400 1900 50  0001 C CNN
+F 3 "" H 4400 1900 50  0001 C CNN
+	1    4400 1900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2850 5100 2850
+Text GLabel 4950 2750 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	4950 2750 5100 2750
+Text GLabel 4950 2650 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	4950 2650 5100 2650
+$Comp
+L Regulator_Linear:AP2127R-3.3 U1
+U 1 1 615166AC
+P 3750 1650
+F 0 "U1" H 3750 1892 50  0000 C CNN
+F 1 "AP2127R-3.3" H 3750 1801 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 3750 1850 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2127.pdf" H 3750 1600 50  0001 C CNN
+	1    3750 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1650 4150 1650
+$Comp
+L Device:C C1
+U 1 1 6151A4C8
+P 4150 1900
+F 0 "C1" H 4265 1946 50  0000 L CNN
+F 1 "C" H 4265 1855 50  0000 L CNN
+F 2 "" H 4188 1750 50  0001 C CNN
+F 3 "~" H 4150 1900 50  0001 C CNN
+	1    4150 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 1650
+Wire Wire Line
+	4150 1650 5100 1650
+$Comp
+L power:GND #PWR0108
+U 1 1 6151B1DB
+P 3950 2150
+F 0 "#PWR0108" H 3950 1900 50  0001 C CNN
+F 1 "GND" H 3955 1977 50  0000 C CNN
+F 2 "" H 3950 2150 50  0001 C CNN
+F 3 "" H 3950 2150 50  0001 C CNN
+	1    3950 2150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1650 3200 1650
+Wire Wire Line
+	3200 1650 3200 1500
+$Comp
+L power:+12V #PWR0109
+U 1 1 6151C088
+P 3200 1500
+F 0 "#PWR0109" H 3200 1350 50  0001 C CNN
+F 1 "+12V" H 3215 1673 50  0000 C CNN
+F 2 "" H 3200 1500 50  0001 C CNN
+F 3 "" H 3200 1500 50  0001 C CNN
+	1    3200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 6151C72C
+P 8000 1650
+F 0 "J2" H 7972 1674 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 7972 1583 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8000 1650 50  0001 C CNN
+F 3 "~" H 8000 1650 50  0001 C CNN
+	1    8000 1650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1550 7500 1550
+Wire Wire Line
+	7800 1650 7500 1650
+Wire Wire Line
+	7500 1750 7800 1750
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 61521B68
+P 8000 2850
+F 0 "J3" H 7972 2824 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 7972 2733 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8000 2850 50  0001 C CNN
+F 3 "~" H 8000 2850 50  0001 C CNN
+	1    8000 2850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2750 7500 2750
+Wire Wire Line
+	7500 2850 7800 2850
+Wire Wire Line
+	7800 2950 7500 2950
+Wire Wire Line
+	7500 3050 7800 3050
+NoConn ~ 7500 2550
+NoConn ~ 7500 2450
+NoConn ~ 7500 2350
+NoConn ~ 7500 2250
+NoConn ~ 7500 2150
+NoConn ~ 7500 2050
+NoConn ~ 7500 1950
+NoConn ~ 7500 1850
+NoConn ~ 7500 1450
+NoConn ~ 5100 1150
+NoConn ~ 5100 1250
+NoConn ~ 5100 1350
+NoConn ~ 5100 1450
+NoConn ~ 5100 1550
+NoConn ~ 5100 1850
+NoConn ~ 5100 1950
+NoConn ~ 5100 2050
+NoConn ~ 5100 2150
+NoConn ~ 5100 2250
+NoConn ~ 5100 2350
+NoConn ~ 5100 2450
+NoConn ~ 5100 2550
+Wire Wire Line
+	3750 1950 3750 2150
+Wire Wire Line
+	3750 2150 3950 2150
+Wire Wire Line
+	3950 2150 4150 2150
+Wire Wire Line
+	4150 2150 4150 2050
+Connection ~ 3950 2150
+Wire Wire Line
+	4150 1750 4150 1650
+$EndSCHEMATC

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ProjectSymbols)(type KiCad)(uri ${KIPRJMOD}/component_library)(options "")(descr ""))
+)
